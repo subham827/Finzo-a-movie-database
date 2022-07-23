@@ -91,7 +91,7 @@ useEffect(()=>{
   return (
    
    <Container>
-    <Header>Flinzo
+    <Header>Finzo
       <SearchBox>
         <SearchInput type="text" placeholder="Search for a movie" value={searchTerm} onChange={onTextChange}/>
       </SearchBox>
