@@ -60,7 +60,7 @@ const [loading, setLoading] = useState(false);
 
   const fetchMovies = async (searchString) => {
     setLoading(true);
-   const response = await axios.get(`http://www.omdbapi.com/?s=${searchString}&apikey=47832f18`);
+   const response = await axios.get(`https://www.omdbapi.com/?s=${searchString}&apikey=47832f18`);
    console.log(response.data.Search);
     setMovies(response.data.Search); 
     setLoading(false);
@@ -69,7 +69,7 @@ const [loading, setLoading] = useState(false);
   const fetchfullMovies = async ()=>{
     setLoading(true);
     // const response = await axios.get(`http://www.omdbapi.com/?page=${page}&apikey=47832f18`);
-    const response = await axios.get(`http://www.omdbapi.com/?s=Avengers&apikey=47832f18`);
+    const response = await axios.get(`https://www.omdbapi.com/?s=Avengers&apikey=47832f18`);
     setMovies(response.data.Search); 
     console.log(response);
     setLoading(false);
