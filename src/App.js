@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
-import Movie from './components/Movie';
+import Movie from './Movie';
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
 const Container = styled.div`
